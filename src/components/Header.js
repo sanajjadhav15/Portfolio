@@ -12,18 +12,18 @@ function Header() {
 
   const getLinkClass = (path) => {
     return location.pathname === path
-      ? "text-xl font-semibold text-accent"
-      : "text-xl font-semibold text-white hover:text-accent";
+      ? "text-3xl font-bold text-accent"
+      : "text-3xl font-bold text-white hover:text-accent";
   };
 
   return (
-    <header className="bg-primary p-4 shadow-lg mb-0">
+    <header className="bg-primary p-8 shadow-lg mb-0">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-3xl font-bold text-accent md:hidden tracking-wide">
+        <h1 className="text-4xl font-bold text-accent md:hidden tracking-wide">
           Sanaj Jadhav
         </h1>
         <nav className="flex-1 flex justify-center">
-          <ul className="hidden md:flex space-x-12">
+          <ul className="hidden md:flex space-x-20">
             <li>
               <Link to="/" className={getLinkClass("/")}>
                 Home
@@ -52,7 +52,7 @@ function Header() {
           </ul>
         </nav>
         <button
-          className="md:hidden text-2xl text-accent focus:outline-none"
+          className="md:hidden text-3xl text-accent focus:outline-none"
           aria-label="Toggle menu"
           onClick={toggleMenu}
         >
@@ -60,15 +60,15 @@ function Header() {
         </button>
       </div>
       {isOpen && (
-        <nav className="md:hidden fixed top-0 left-0 w-full h-full bg-primary bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-8 transition-opacity duration-300">
+        <nav className="md:hidden fixed top-0 left-0 w-full h-full bg-primary bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-12 transition-opacity duration-300">
           <button
-            className="text-3xl text-accent focus:outline-none"
+            className="text-4xl text-accent focus:outline-none"
             aria-label="Close menu"
             onClick={toggleMenu}
           >
             <FaTimes />
           </button>
-          <ul className="flex flex-col items-center space-y-8">
+          <ul className="flex flex-col items-center space-y-12">
             <li>
               <Link to="/" className={getLinkClass("/")} onClick={toggleMenu}>
                 Home
@@ -113,7 +113,7 @@ function Header() {
           </ul>
         </nav>
       )}
-      <div className="w-full h-[0.12rem] bg-accent mt-4"></div>
+      <div className="w-full h-1 bg-accent mt-8"></div>
     </header>
   );
 }

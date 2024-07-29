@@ -27,21 +27,21 @@ import { RiFirebaseFill } from "react-icons/ri";
 function Home() {
   return (
     <div className="min-h-screen bg-primary p-4 -mx-4 -my-5">
-      <header className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 md:mt-12">
+      <header className="flex flex-col md:flex-row items-center h-[70vh] justify-center space-y-8 md:space-y-0 md:space-x-8 md:mt-12" role="banner">
         <div className="flex flex-col items-center text-center">
           <div className="bg-transparent p-4 rounded-lg overflow-hidden w-full max-w-xs">
             <img
               src={profile}
-              alt="Sanaj Jadhav"
+              alt="Sanaj Jadhav Profile Picture"
               className="md:w-56 md:h-56 w-64 h-64 object-cover rounded-t-lg hover:scale-[1.02] transition-transform duration-200"
             />
-
             <div className="p-6 text-white">
               <div className="text-sm flex flex-col items-center md:items-start text-white mb-4">
                 <p className="flex text-base items-center mb-2">
                   <CgProfile
                     size={20}
                     className="mr-2 text-white hover:text-accent"
+                    aria-hidden="true"
                   />
                   15 Jun 2003
                 </p>
@@ -50,10 +50,12 @@ function Home() {
                   <a
                     href="tel:+918767554973"
                     className="flex items-center hover:text-accent"
+                    aria-label="Phone number"
                   >
                     <MdLocalPhone
                       size={20}
                       className="mr-2 mt-1 text-white hover:text-accent"
+                      aria-hidden="true"
                     />
                     (+91) 8767554973
                   </a>
@@ -63,10 +65,12 @@ function Home() {
                   <a
                     href="mailto:sanajjadhav15@gmail.com"
                     className="flex items-center hover:text-accent"
+                    aria-label="Email address"
                   >
                     <MdEmail
                       size={20}
                       className="mr-2 mt-1 text-white hover:text-accent"
+                      aria-hidden="true"
                     />
                     sanajjadhav15@gmail.com
                   </a>
@@ -77,10 +81,12 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center hover:text-accent"
+                    aria-label="Location"
                   >
                     <IoLocationSharp
                       size={20}
                       className="mr-2 mt-1 text-white hover:text-accent"
+                      aria-hidden="true"
                     />
                     Mumbai, IN
                   </a>
@@ -111,16 +117,17 @@ function Home() {
               href="https://drive.google.com/file/d/1rLVPr9OHZgbtWmmhF259EkNK1R5IMbNw/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Download Resume"
             >
               <button className="text-accent flex items-center justify-center bg-transparent hover:bg-accent hover:text-black py-2 px-4 border border-accent rounded-lg transition-colors duration-300">
-                <FiDownload className="mr-2" /> Download Resume
+                <FiDownload className="mr-2" aria-hidden="true" /> Download Resume
               </button>
             </a>
           </div>
         </div>
       </header>
 
-      <main className="flex justify-center mb-12">
+      <main className="flex justify-center mb-12" role="main">
         <section className="mt-12 flex flex-col md:w-[60%]">
           <h2 className="text-3xl text-center text-accent mb-6">Skills</h2>
           <p className="text-base text-center text-white mb-10">
@@ -132,9 +139,9 @@ function Home() {
             presentation skills ensure clear communication and effective project
             delivery.
           </p>
-          <p className="text-lg text-white text-center mb-6">
+          <h3 className="text-lg text-white text-center mb-6">
             Technical Skills
-          </p>
+          </h3>
           <div className="flex flex-wrap justify-center">
             <SkillSphere icon={<TbBrandCpp size={36} />} label="C/C++" />
             <SkillSphere icon={<FaPython size={36} />} label="Python" />
@@ -151,7 +158,7 @@ function Home() {
 
           <div className="border-t border-gray-600 mt-8 mb-6"></div>
 
-          <p className="text-lg text-white text-center mt-6 mb-6">Tools</p>
+          <h3 className="text-lg text-white text-center mt-6 mb-6">Tools</h3>
           <div className="flex flex-wrap justify-center">
             <SkillSphere icon={<CgFigma size={36} />} label="Figma" />
             <SkillSphere icon={<SiCanva size={36} />} label="Canva" />

@@ -27,7 +27,7 @@ import { RiFirebaseFill } from "react-icons/ri";
 function Home() {
   return (
     <div className="min-h-screen bg-primary p-4 -mx-4 -my-5">
-      <header className="flex flex-col md:flex-row items-center h-[80vh] justify-center space-y-8 md:space-y-0 md:space-x-8 md:mt-12" role="banner">
+      <header className="flex flex-col md:flex-row items-center md:h-[80vh] justify-center space-y-8 md:space-y-0 md:space-x-8 md:mt-12" role="banner">
         <div className="flex flex-col items-center text-center">
           <div className="bg-transparent p-4 rounded-lg overflow-hidden w-full max-w-xs">
             <img

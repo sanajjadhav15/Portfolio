@@ -12,12 +12,12 @@ function Header() {
 
   const getLinkClass = (path) => {
     return location.pathname === path
-      ? "text-2xl font-bold text-accent"
-      : "text-2xl font-bold text-white hover:text-accent";
+      ? "text-xl font-bold text-accent"
+      : "text-xl font-bold text-white hover:text-accent";
   };
 
   return (
-    <header className="bg-primary p-6 shadow-lg mb-0">
+    <header className=" w-full bg-primary p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-4xl font-bold text-accent md:hidden tracking-wide">
           Sanaj Jadhav
@@ -113,7 +113,7 @@ function Header() {
           </ul>
         </nav>
       )}
-      <div className="w-full h-1 bg-accent mt-8"></div>
+      <div className="w-full h-1 bg-accent mt-4"></div>
     </header>
   );
 }

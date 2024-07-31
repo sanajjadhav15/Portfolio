@@ -12,18 +12,18 @@ function Header() {
 
   const getLinkClass = (path) => {
     return location.pathname === path
-      ? "text-3xl font-bold text-accent"
-      : "text-3xl font-bold text-white hover:text-accent";
+      ? "text-2xl font-bold text-accent"
+      : "text-2xl font-bold text-white hover:text-accent";
   };
 
   return (
-    <header className="bg-primary p-8 shadow-lg mb-0">
+    <header className="bg-primary p-6 shadow-lg mb-0">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-4xl font-bold text-accent md:hidden tracking-wide">
           Sanaj Jadhav
         </h1>
         <nav className="flex-1 flex justify-center">
-          <ul className="hidden md:flex space-x-20">
+          <ul className="hidden md:flex space-x-14">
             <li>
               <Link to="/" className={getLinkClass("/")}>
                 Home

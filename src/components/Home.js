@@ -106,7 +106,7 @@ function Home() {
 
           <div className="mt-6 flex items-center justify-center">
             <a
-              href="https://drive.google.com/file/d/1rLVPr9OHZgbtWmmhF259EkNK1R5IMbNw/view?usp=sharing"
+              href="https://drive.google.com/drive/folders/1IoCTrFjJv8X_0Q3CVPk01nH9gYzjCR6K?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

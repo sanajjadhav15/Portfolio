@@ -59,7 +59,7 @@ function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                className="mt-1 block w-full rounded-md border-second bg-second text-accent placeholder-gray-400 focus:border-accent focus:ring-accent px-4 py-3 text-lg md:text-base"
+                className="mt-1 block w-full rounded-md border border-accent/80 bg-cardBackground/50 text-white placeholder-textSecondary focus:border-accent focus:ring-accent focus:ring-2 px-4 py-3 text-lg md:text-base backdrop-blur-sm transition-all duration-300"
                 placeholder="Your Name"
                 required
                 {...register('name', {
@@ -83,7 +83,7 @@ function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                className="mt-1 block w-full rounded-md border-second bg-second text-accent placeholder-gray-400 focus:border-accent focus:ring-accent px-4 py-3 text-lg md:text-base"
+                className="mt-1 block w-full rounded-md border border-accent/80 bg-cardBackground/50 text-white placeholder-textSecondary focus:border-accent focus:ring-accent focus:ring-2 px-4 py-3 text-lg md:text-base backdrop-blur-sm transition-all duration-300"
                 placeholder="Your Email"
                 required
                 {...register('email', {
@@ -107,7 +107,7 @@ function Contact() {
                 id="message"
                 name="message"
                 rows="4"
-                className="mt-1 block w-full rounded-md border-second bg-second text-accent placeholder-gray-400 focus:border-accent focus:ring-accent px-4 py-3 text-lg md:text-base"
+                className="mt-1 block w-full rounded-md border border-accent/80 bg-cardBackground/50 text-white placeholder-textSecondary focus:border-accent focus:ring-accent focus:ring-2 px-4 py-3 text-lg md:text-base backdrop-blur-sm transition-all duration-300"
                 placeholder="Your Message"
                 required
                 {...register('message', {
@@ -122,7 +122,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-accent hover:bg-primary hover:text-accent border border-transparent hover:border-accent text-black font-semibold rounded-md hover:bg-opacity-90 transition"
+              className="w-full py-2 px-4 bg-gradient-to-r from-accent to-secondary hover:from-tertiary hover:to-accent text-white font-semibold rounded-md transition-all duration-500 hover:scale-105 hover:shadow-glow border border-accent/20"
             >
               Send Message
             </button>
@@ -131,21 +131,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="w-full mt-12">
-        <h2 className="text-2xl text-white mb-4 text-center md:text-start">
-          Find Me Here
-        </h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.911674646044!2d72.84809841943094!3d19.076090366830307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6e0a3e579f3%3A0x5d8c8e3e394b59f3!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1678834975838!5m2!1sen!2sus"
-          width="100%"
-          height="200"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Map of Mumbai, India"
-        ></iframe>
-      </div>
+
     </main>
   );
 }

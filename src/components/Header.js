@@ -17,11 +17,12 @@ function Header() {
   };
 
   return (
-    <header className=" w-full bg-primary p-4 shadow-lg">
+    <header className=" w-full bg-gradient-to-r from-primary via-cardBackground to-primary p-4 shadow-glow border-b border-accent/20 backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-4xl font-bold text-accent md:hidden tracking-wide">
           Sanaj Jadhav
         </h1>
+        <p className="text-sm text-textSecondary md:hidden">Data Analyst</p>
         <nav className="flex-1 flex justify-center">
           <ul className="hidden md:flex space-x-14">
             <li>
@@ -60,7 +61,7 @@ function Header() {
         </button>
       </div>
       {isOpen && (
-        <nav className="md:hidden fixed top-0 left-0 w-full h-full bg-primary bg-opacity-90 z-50 flex flex-col items-center justify-center space-y-12 transition-opacity duration-300">
+        <nav className="md:hidden fixed top-0 left-0 w-full h-full bg-gradient-to-br from-primary via-cardBackground to-primary bg-opacity-95 backdrop-blur-md z-50 flex flex-col items-center justify-center space-y-12 transition-opacity duration-300">
           <button
             className="text-4xl text-accent focus:outline-none"
             aria-label="Close menu"
@@ -113,7 +114,7 @@ function Header() {
           </ul>
         </nav>
       )}
-      <div className="w-full h-1 bg-accent mt-4"></div>
+      <div className="w-full h-1 bg-gradient-to-r from-accent via-secondary to-tertiary mt-4 animate-pulse"></div>
     </header>
   );
 }

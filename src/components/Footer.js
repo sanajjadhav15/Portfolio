@@ -3,18 +3,19 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="bg-second text-white py-6">
+    <footer className="bg-gradient-to-r from-primary via-cardBackground to-primary text-white py-6 border-t border-accent/20 shadow-glow">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center">
-          <p className="text-xl mb-2">with ❤️</p>
-          <p className="text-2xl font-bold mb-4">Sanaj Jadhav</p>
+          <p className="text-xl mb-2 text-textSecondary">Crafted with ❤️ and data insights</p>
+          <p className="text-2xl font-bold mb-2 text-accent">Sanaj Jadhav</p>
+          <p className="text-sm text-textSecondary mb-4">Data Analyst & Business Intelligence Specialist</p>
           <div className="flex justify-center mb-4">
             <a
               href="https://www.linkedin.com/in/sanaj-jadhav-576a40258/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-accent hover:text-white transition-colors duration-200 mx-3"
+              className="text-accent hover:text-white transition-all duration-300 mx-3 hover:scale-110 hover:shadow-glow transform"
             >
               <FaLinkedin size={32} />
             </a>
@@ -23,7 +24,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-accent hover:text-white transition-colors duration-200 mx-3"
+              className="text-accent hover:text-white transition-all duration-300 mx-3 hover:scale-110 hover:shadow-glow transform"
             >
               <FaGithub size={32} />
             </a>

@@ -5,29 +5,53 @@ import { CgProfile } from "react-icons/cg";
 import { MdLocalPhone, MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import { FiDownload } from "react-icons/fi";
-import { TbBrandCpp } from "react-icons/tb";
+
 import {
   FaPython,
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaReact,
+  FaDatabase,
+  FaChartBar,
+  FaChartLine,
+  FaRProject,
 } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { CgFigma } from "react-icons/cg";
-import { SiCanva, SiAdobephotoshop } from "react-icons/si";
+import {
+  SiTableau,
+  SiMicrosoftexcel,
+  SiPowerbi,
+  SiJupyter,
+  SiNumpy,
+  SiPandas,
+  SiScikitlearn,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiApachespark,
+  SiGoogleanalytics,
+  SiReact,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiCplusplus,
+  SiFirebase,
+  SiStreamlit,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiPlotly,
+} from "react-icons/si";
+import { TbBrandPython } from "react-icons/tb";
 import {
   PiMicrosoftExcelLogoFill,
   PiMicrosoftPowerpointLogoFill,
 } from "react-icons/pi";
-import { FaGitAlt } from "react-icons/fa";
-import { RiFirebaseFill } from "react-icons/ri";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-primary p-4 -mx-4 -my-5">
-      <header className="flex flex-col md:flex-row items-center justify-center md:h-[90vh] overflow-hidden">
+    <div className="min-h-screen bg-primary p-4 -mx-4 -my-5 relative overflow-hidden">
+      {/* Background gradient effects */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-data opacity-5"></div>
+      <div className="absolute top-20 right-20 w-72 h-72 bg-tertiary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      <header className="relative z-10 flex flex-col md:flex-row items-center justify-center md:h-[90vh] overflow-hidden">
         <div className="flex flex-col items-center md:w-[30vw] text-center md:mr-10">
           <img
             src={profile}
@@ -60,19 +84,19 @@ function Home() {
 
               <p className="flex md:text-2xl text-lg items-center mb-2">
                 <a
-                  href="mailto:sanajjadhav15@gmail.com"
+                  href="mailto:sanajjadhav77@gmail.com"
                   className="flex items-center hover:text-accent"
                 >
                   <MdEmail
                     size={28}
                     className="mr-3 mt-1 text-white hover:text-accent"
                   />
-                  sanajjadhav15@gmail.com
+                  sanajjadhav77@gmail.com
                 </a>
               </p>
               <p className="flex md:text-2xl text-lg items-center">
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Mumbai,IN"
+                  href="https://www.google.com/maps/search/?api=1&query=Pune,IN"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center hover:text-accent"
@@ -81,7 +105,7 @@ function Home() {
                     size={28}
                     className="mr-3 mt-1 text-white hover:text-accent"
                   />
-                  Mumbai, IN
+                  Pune, IN
                 </a>
               </p>
             </div>
@@ -89,28 +113,30 @@ function Home() {
         </div>
 
         <div className="text-center md:text-left max-w-md md:max-w-2xl">
-          <h1 className="md:text-4xl text-2xl text-center text-white mb-2 md:mb-4">
-            Hello, World!
-          </h1>
-          <h2 className="text-2xl md:text-5xl text-center text-white mb-4 md:mb-6">
+          <h1 className="text-2xl md:text-5xl text-center text-white mb-4 md:mb-6">
             I'm <span className="text-accent">Sanaj Jadhav</span>
-          </h2>
+          </h1>
+          <h3 className="text-xl md:text-3xl text-center text-accent mb-4">
+            Data Analyst | SQL | Python | Excel | Power BI
+          </h3>
           <p className="text-lg md:text-2xl text-white md:text-justify">
-            I’m a dedicated software developer with a focus on crafting
-            responsive and user-friendly web applications. Proficient in
-            JavaScript, React, and Node.js. I excel at designing intuitive and
-            engaging user experiences. My passion for technology and continuous
-            learning fuels my ability to transform innovative concepts into
-            impactful solutions. Let’s connect and bring your ideas to life!
+            I help transform raw, messy data into clear, actionable insights,
+            turning "uh-huh" moments into "aha!" discoveries. I love diving into
+            datasets, spotting trends, uncovering hidden patterns, and building
+            dashboards that tell a story. Whether it's numbers, charts, or
+            tables, I make data easy to understand and useful. My goal is to
+            help you see what's really happening behind the numbers so decisions
+            become smarter and more confident, think of me as your data guide,
+            turning chaos into clarity, one insight at a time.
           </p>
 
           <div className="mt-6 flex items-center justify-center">
             <a
-              href="https://drive.google.com/drive/folders/1IoCTrFjJv8X_0Q3CVPk01nH9gYzjCR6K?usp=sharing"
-              target="_blank"
+              href="/Sanaj_Resume_Data_Analyst.pdf"
+              download="Sanaj_Jadhav_Data_Analyst_Resume.pdf"
               rel="noopener noreferrer"
             >
-              <button className="text-accent md:text-xl flex items-center justify-center bg-transparent hover:bg-accent hover:text-black py-2 px-4 md:py-3 md:px-6 border border-accent rounded-lg transition-colors duration-300">
+              <button className="text-accent md:text-xl flex items-center justify-center bg-transparent hover:bg-gradient-data hover:text-white hover:shadow-glow py-2 px-4 md:py-3 md:px-6 border border-accent rounded-lg transition-all duration-500 hover:scale-105">
                 <FiDownload className="mr-2 md:mr-3" /> Download Resume
               </button>
             </a>
@@ -118,55 +144,69 @@ function Home() {
         </div>
       </header>
 
-      <main className="flex justify-center mb-12">
+      <main className="relative z-10 flex justify-center mb-12">
         <section className="mt-12 flex flex-col md:w-[60vw]">
-          <h2 className="text-2xl md:text-5xl text-center text-accent mb-6">Skills</h2>
+          <h2 className="text-2xl md:text-5xl text-center text-accent mb-6">
+            Skills
+          </h2>
           <p className="text-base md:text-xl text-center text-white mb-10 md:mb-16">
-            I am proficient in programming languages such as C/C++, Python,
-            HTML, CSS, Tailwind CSS, Bootstrap, Javascript, and jQuery. My
-            expertise extends to frameworks like React.js, Next.js, and
-            Firebase. I also excel in using tools like Figma, Canva, Microsoft
-            Office Suite, and Photoshop. My strong documentation and
-            presentation skills ensure clear communication and effective project
-            delivery.
+            I am proficient in programming languages including Python (Pandas,
+            NumPy), SQL, ReactJS, C/C++, JavaScript, HTML, and CSS. I specialize
+            in data analysis and visualization, using techniques like
+            Exploratory Data Analysis (EDA) with Matplotlib, Seaborn, and
+            Plotly. I have hands-on experience with databases and business
+            intelligence tools such as MySQL, Firebase, Microsoft Excel, Power
+            BI, and Tableau. Additionally, I am skilled in platforms and tools
+            like Streamlit, Git, GitHub, and Figma. Combining these technical
+            skills with strong documentation and presentation abilities, I turn
+            complex datasets into actionable insights and build interactive
+            dashboards that communicate data effectively.
           </p>
           <p className="text-lg md:text-3xl text-white text-center mb-6 md:mb-8">
-            Technical Skills
+            Programming Languages
           </p>
           <div className="flex flex-wrap justify-center">
-            <SkillSphere icon={<TbBrandCpp size={40} />} label="C/C++" />
             <SkillSphere icon={<FaPython size={40} />} label="Python" />
-            <SkillSphere icon={<FaHtml5 size={40} />} label="HTML" />
-            <SkillSphere icon={<FaCss3Alt size={40} />} label="CSS" />
-            <SkillSphere
-              icon={<RiTailwindCssFill size={40} />}
-              label="Tailwind CSS"
-            />
-            <SkillSphere icon={<FaJsSquare size={40} />} label="JavaScript" />
-            <SkillSphere icon={<FaReact size={40} />} label="React.js" />
-            <SkillSphere icon={<FaNode size={40} />} label="Node.js" />
+            <SkillSphere icon={<FaRProject size={40} />} label="R" />
+            <SkillSphere icon={<FaDatabase size={40} />} label="SQL" />
+            <SkillSphere icon={<SiReact size={40} />} label="ReactJS" />
+            <SkillSphere icon={<SiCplusplus size={40} />} label="C/C++" />
+            <SkillSphere icon={<SiJavascript size={40} />} label="JavaScript" />
+            <SkillSphere icon={<SiHtml5 size={40} />} label="HTML" />
+            <SkillSphere icon={<SiCss3 size={40} />} label="CSS" />
           </div>
 
           <div className="border-t border-gray-600 mt-8 mb-6"></div>
 
-          <p className="text-lg md:text-3xl text-white text-center mt-6 mb-6 md:mb-8">Tools</p>
+          <p className="text-lg md:text-3xl text-white text-center mt-6 mb-6 md:mb-8">
+            Data Analysis & Visualization
+          </p>
           <div className="flex flex-wrap justify-center">
-            <SkillSphere icon={<CgFigma size={40} />} label="Figma" />
-            <SkillSphere icon={<SiCanva size={40} />} label="Canva" />
-            <SkillSphere
-              icon={<SiAdobephotoshop size={40} />}
-              label="Photoshop"
-            />
+            <SkillSphere icon={<SiPandas size={40} />} label="Pandas" />
+            <SkillSphere icon={<SiNumpy size={40} />} label="NumPy" />
+            <SkillSphere icon={<FaChartLine size={40} />} label="Matplotlib" />
+            <SkillSphere icon={<FaChartBar size={40} />} label="Seaborn" />
+            <SkillSphere icon={<SiPlotly size={40} />} label="Plotly" />
+            <SkillSphere icon={<SiTableau size={40} />} label="Tableau" />
+            <SkillSphere icon={<SiPowerbi size={40} />} label="Power BI" />
+          </div>
+
+          <div className="border-t border-gray-600 mt-8 mb-6"></div>
+
+          <p className="text-lg md:text-3xl text-white text-center mt-6 mb-6 md:mb-8">
+            Databases & Tools
+          </p>
+          <div className="flex flex-wrap justify-center">
+            <SkillSphere icon={<SiMysql size={40} />} label="MySQL" />
+            <SkillSphere icon={<SiFirebase size={40} />} label="Firebase" />
             <SkillSphere
               icon={<PiMicrosoftExcelLogoFill size={40} />}
               label="Excel"
             />
-            <SkillSphere
-              icon={<PiMicrosoftPowerpointLogoFill size={40} />}
-              label="PowerPoint"
-            />
-            <SkillSphere icon={<FaGitAlt size={40} />} label="Git" />
-            <SkillSphere icon={<RiFirebaseFill size={40} />} label="Firebase" />
+            <SkillSphere icon={<SiStreamlit size={40} />} label="Streamlit" />
+            <SkillSphere icon={<SiGit size={40} />} label="Git" />
+            <SkillSphere icon={<SiGithub size={40} />} label="GitHub" />
+            <SkillSphere icon={<SiFigma size={40} />} label="Figma" />
           </div>
         </section>
       </main>

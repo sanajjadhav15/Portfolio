@@ -6,19 +6,19 @@ import logo3 from "../utils/nss-pic.png";
 
 function Education() {
   return (
-    <main className="min-h-screen bg-primary p-4 -mx-4 -my-5 relative overflow-hidden">
+    <main className="min-h-screen bg-primary p-2 sm:p-4 -mx-2 sm:-mx-4 -my-2 sm:-my-5 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-data opacity-5"></div>
-      <div className="absolute top-20 right-20 w-80 h-80 bg-tertiary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      <div className="absolute top-10 right-4 sm:top-20 sm:right-20 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-tertiary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      <div className="absolute bottom-10 left-4 sm:bottom-20 sm:left-20 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-secondary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
       
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4">
             Educational <span className="text-accent">Journey</span>
           </h1>
-          <p className="text-textSecondary text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="text-textSecondary text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
             A comprehensive academic journey focused on Information Technology and Data Analytics, 
             combined with leadership and community service through volunteer work.
           </p>
@@ -30,7 +30,7 @@ function Education() {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-accent to-secondary flex items-center justify-center">
               <FaGraduationCap className="text-white text-lg" />
             </div>
-            <h2 id="education-section" className="text-3xl font-bold text-white">Education</h2>
+            <h2 id="education-section" className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Education</h2>
           </div>
           
           <article className="group relative bg-gradient-card rounded-2xl p-8 border border-accent/20 hover:border-accent/40 shadow-card hover:shadow-glow transition-all duration-500 backdrop-blur-sm transform hover:scale-[1.02] mb-8">
@@ -45,14 +45,26 @@ function Education() {
               </div>
               
               <div className="flex-1">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                  <div className="mb-3 sm:mb-0">
                     <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300 mb-2">
                       K. J. Somaiya Institute of Technology
                     </h3>
-                    <p className="text-textSecondary text-sm mb-1">Mumbai, Maharashtra</p>
+                    <p className="text-textSecondary text-sm mb-2 sm:mb-1">Mumbai, Maharashtra</p>
+                    {/* Mobile: Show CGPA and dates below location */}
+                    <div className="block sm:hidden space-y-2">
+                      <div className="flex items-center gap-2 text-success font-semibold">
+                        <FaAward className="text-sm" />
+                        <span>CGPA: 9.0</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-textSecondary text-sm">
+                        <FaCalendarAlt className="text-xs" />
+                        <span>Dec 2021 - May 2025</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-right">
+                  {/* Desktop: Show CGPA and dates on the right */}
+                  <div className="hidden sm:block text-right">
                     <div className="flex items-center gap-2 text-success font-semibold mb-1">
                       <FaAward className="text-sm" />
                       <span>CGPA: 9.0</span>
@@ -106,14 +118,26 @@ function Education() {
               </div>
               
               <div className="flex-1">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                  <div className="mb-3 sm:mb-0">
                     <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300 mb-2">
                       Late Rangnathrao Kaldate Guruji School
                     </h3>
-                    <p className="text-textSecondary text-sm mb-1">Parbhani, Maharashtra</p>
+                    <p className="text-textSecondary text-sm mb-2 sm:mb-1">Parbhani, Maharashtra</p>
+                    {/* Mobile: Show percentage and dates below location */}
+                    <div className="block sm:hidden space-y-2">
+                      <div className="flex items-center gap-2 text-success font-semibold">
+                        <FaAward className="text-sm" />
+                        <span>97.8%</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-textSecondary text-sm">
+                        <FaCalendarAlt className="text-xs" />
+                        <span>Jun 2019 - Jun 2021</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-right">
+                  {/* Desktop: Show percentage and dates on the right */}
+                  <div className="hidden sm:block text-right">
                     <div className="flex items-center gap-2 text-success font-semibold mb-1">
                       <FaAward className="text-sm" />
                       <span>97.8%</span>
@@ -169,14 +193,26 @@ function Education() {
               </div>
               
               <div className="flex-1">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                  <div className="mb-3 sm:mb-0">
                     <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300 mb-2">
                       Scottish Academy
                     </h3>
-                    <p className="text-textSecondary text-sm mb-1">Parbhani, Maharashtra</p>
+                    <p className="text-textSecondary text-sm mb-2 sm:mb-1">Parbhani, Maharashtra</p>
+                    {/* Mobile: Show percentage and dates below location */}
+                    <div className="block sm:hidden space-y-2">
+                      <div className="flex items-center gap-2 text-success font-semibold">
+                        <FaAward className="text-sm" />
+                        <span>96.2%</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-textSecondary text-sm">
+                        <FaCalendarAlt className="text-xs" />
+                        <span>Jun 2008 - Jun 2019</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-right">
+                  {/* Desktop: Show percentage and dates on the right */}
+                  <div className="hidden sm:block text-right">
                     <div className="flex items-center gap-2 text-success font-semibold mb-1">
                       <FaAward className="text-sm" />
                       <span>96.2%</span>
@@ -223,7 +259,7 @@ function Education() {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center">
               <FaHandsHelping className="text-white text-lg" />
             </div>
-            <h2 id="volunteering-section" className="text-3xl font-bold text-white">Volunteering & Community Service</h2>
+            <h2 id="volunteering-section" className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Volunteering & Community Service</h2>
           </div>
           
           <article className="group relative bg-gradient-card rounded-2xl p-8 border border-accent/20 hover:border-accent/40 shadow-card hover:shadow-glow transition-all duration-500 backdrop-blur-sm transform hover:scale-[1.02] mb-8">
@@ -238,14 +274,26 @@ function Education() {
               </div>
               
               <div className="flex-1">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                  <div className="mb-3 sm:mb-0">
                     <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300 mb-2">
                       National Service Scheme (NSS)
                     </h3>
-                    <p className="text-textSecondary text-sm mb-1">Community Service Organization</p>
+                    <p className="text-textSecondary text-sm mb-2 sm:mb-1">Community Service Organization</p>
+                    {/* Mobile: Show role and dates below location */}
+                    <div className="block sm:hidden space-y-2">
+                      <div className="flex items-center gap-2 text-warning font-semibold">
+                        <FaAward className="text-sm" />
+                        <span>Senior Volunteer</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-textSecondary text-sm">
+                        <FaCalendarAlt className="text-xs" />
+                        <span>Jun 2022 - Mar 2023</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-right">
+                  {/* Desktop: Show role and dates on the right */}
+                  <div className="hidden sm:block text-right">
                     <div className="flex items-center gap-2 text-warning font-semibold mb-1">
                       <FaAward className="text-sm" />
                       <span>Senior Volunteer</span>
@@ -298,14 +346,26 @@ function Education() {
               </div>
               
               <div className="flex-1">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
+                  <div className="mb-3 sm:mb-0">
                     <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300 mb-2">
                       National Service Scheme (NSS)
                     </h3>
-                    <p className="text-textSecondary text-sm mb-1">Community Service Organization</p>
+                    <p className="text-textSecondary text-sm mb-2 sm:mb-1">Community Service Organization</p>
+                    {/* Mobile: Show role and dates below location */}
+                    <div className="block sm:hidden space-y-2">
+                      <div className="flex items-center gap-2 text-purple-300 font-semibold">
+                        <FaHandsHelping className="text-sm" />
+                        <span>Junior Volunteer</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-textSecondary text-sm">
+                        <FaCalendarAlt className="text-xs" />
+                        <span>Jun 2021 - Jun 2022</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-right">
+                  {/* Desktop: Show role and dates on the right */}
+                  <div className="hidden sm:block text-right">
                     <div className="flex items-center gap-2 text-purple-300 font-semibold mb-1">
                       <FaHandsHelping className="text-sm" />
                       <span>Junior Volunteer</span>

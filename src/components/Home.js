@@ -46,80 +46,75 @@ import {
 
 function Home() {
   return (
-    <div className="min-h-screen bg-primary p-4 -mx-4 -my-5 relative overflow-hidden">
+    <div className="min-h-screen bg-primary p-2 sm:p-4 -mx-2 sm:-mx-4 -my-2 sm:-my-5 relative overflow-hidden">
       {/* Background gradient effects */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-data opacity-5"></div>
-      <div className="absolute top-20 right-20 w-72 h-72 bg-tertiary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
-      <header className="relative z-10 flex flex-col md:flex-row items-center justify-center md:h-[90vh] overflow-hidden">
-        <div className="flex flex-col items-center md:w-[30vw] text-center md:mr-10">
+      <div className="absolute top-10 right-4 sm:top-20 sm:right-20 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-tertiary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      <div className="absolute bottom-10 left-4 sm:bottom-20 sm:left-20 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-secondary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      <header className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-h-[90vh] py-8 gap-6 lg:gap-10">
+        <div className="flex flex-col items-center lg:w-[30vw] text-center">
           <img
             src={profile}
             alt="Sanaj Jadhav"
-            className="md:w-[300px] md:h-[300px] w-64 h-64 mt-1 object-cover rounded-t-lg hover:scale-[1.02] transition-transform duration-200"
+            className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-[280px] lg:h-[280px] xl:w-[300px] xl:h-[300px] object-cover rounded-t-lg hover:scale-[1.02] transition-transform duration-200"
           />
 
-          <div className="p-6 text-white">
-            <div className="text-sm flex flex-col items-center md:items-start text-white mb-4">
-              <p className="flex md:text-2xl text-lg items-center mb-2">
+          <div className="p-4 sm:p-6 text-white w-full max-w-sm">
+            <div className="flex flex-col items-center space-y-3 sm:space-y-3 lg:space-y-4">
+              <div className="flex items-center text-sm sm:text-base lg:text-lg xl:text-xl">
                 <CgProfile
-                  size={28}
+                  size={20}
                   className="mr-3 text-white hover:text-accent"
                 />
-                15 Jun 2003
-              </p>
+                <span>15 Jun 2003</span>
+              </div>
 
-              <p className="flex md:text-2xl text-lg items-center mb-2">
-                <a
-                  href="tel:+918767554973"
-                  className="flex items-center hover:text-accent"
-                >
-                  <MdLocalPhone
-                    size={28}
-                    className="mr-3 mt-1 text-white hover:text-accent"
-                  />
-                  (+91) 8767554973
-                </a>
-              </p>
+              <a
+                href="tel:+918767554973"
+                className="flex items-center hover:text-accent text-sm sm:text-base lg:text-lg xl:text-xl"
+              >
+                <MdLocalPhone
+                  size={20}
+                  className="mr-3 text-white hover:text-accent"
+                />
+                <span>(+91) 8767554973</span>
+              </a>
 
-              <p className="flex md:text-2xl text-lg items-center mb-2">
-                <a
-                  href="mailto:sanajjadhav77@gmail.com"
-                  className="flex items-center hover:text-accent"
-                >
-                  <MdEmail
-                    size={28}
-                    className="mr-3 mt-1 text-white hover:text-accent"
-                  />
-                  sanajjadhav77@gmail.com
-                </a>
-              </p>
-              <p className="flex md:text-2xl text-lg items-center">
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Pune,IN"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center hover:text-accent"
-                >
-                  <IoLocationSharp
-                    size={28}
-                    className="mr-3 mt-1 text-white hover:text-accent"
-                  />
-                  Pune, IN
-                </a>
-              </p>
+              <a
+                href="mailto:sanajjadhav77@gmail.com"
+                className="flex items-center hover:text-accent text-sm sm:text-base lg:text-lg xl:text-xl"
+              >
+                <MdEmail
+                  size={20}
+                  className="mr-3 text-white hover:text-accent"
+                />
+                <span className="break-all sm:break-normal">sanajjadhav77@gmail.com</span>
+              </a>
+              
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Pune,IN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-accent text-sm sm:text-base lg:text-lg xl:text-xl"
+              >
+                <IoLocationSharp
+                  size={20}
+                  className="mr-3 text-white hover:text-accent"
+                />
+                <span>Pune, IN</span>
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="text-center md:text-left max-w-md md:max-w-2xl">
-          <h1 className="text-2xl md:text-5xl text-center text-white mb-4 md:mb-6">
+        <div className="text-center lg:text-left max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl px-4 sm:px-0">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center lg:text-left text-white mb-4 lg:mb-6 leading-tight">
             I'm <span className="text-accent">Sanaj Jadhav</span>
           </h1>
-          <h3 className="text-xl md:text-3xl text-center text-accent mb-4">
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center lg:text-left text-accent mb-4 lg:mb-6 leading-relaxed">
             Data Analyst | SQL | Python | Excel | Power BI
           </h3>
-          <p className="text-lg md:text-2xl text-white md:text-justify">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white text-center lg:text-justify leading-relaxed mb-6">
             I help transform raw, messy data into clear, actionable insights,
             turning "uh-huh" moments into "aha!" discoveries. I love diving into
             datasets, spotting trends, uncovering hidden patterns, and building
@@ -130,26 +125,26 @@ function Home() {
             turning chaos into clarity, one insight at a time.
           </p>
 
-          <div className="mt-6 flex items-center justify-center">
+          <div className="flex items-center justify-center lg:justify-start">
             <a
               href="/Sanaj_Resume_Data_Analyst.pdf"
               download="Sanaj_Jadhav_Data_Analyst_Resume.pdf"
               rel="noopener noreferrer"
             >
-              <button className="text-accent md:text-xl flex items-center justify-center bg-transparent hover:bg-gradient-data hover:text-white hover:shadow-glow py-2 px-4 md:py-3 md:px-6 border border-accent rounded-lg transition-all duration-500 hover:scale-105">
-                <FiDownload className="mr-2 md:mr-3" /> Download Resume
+              <button className="text-accent text-sm sm:text-base md:text-lg lg:text-xl flex items-center justify-center bg-transparent hover:bg-gradient-data hover:text-white hover:shadow-glow py-2 px-3 sm:py-2 sm:px-4 lg:py-3 lg:px-6 border border-accent rounded-lg transition-all duration-500 hover:scale-105">
+                <FiDownload className="mr-2 text-sm sm:text-base" /> Download Resume
               </button>
             </a>
           </div>
         </div>
       </header>
 
-      <main className="relative z-10 flex justify-center mb-12">
-        <section className="mt-12 flex flex-col md:w-[60vw]">
-          <h2 className="text-2xl md:text-5xl text-center text-accent mb-6">
+      <main className="relative z-10 flex justify-center mb-8 sm:mb-12 px-4 sm:px-0">
+        <section className="mt-8 sm:mt-12 flex flex-col w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-5xl">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center text-accent mb-4 sm:mb-6">
             Skills
           </h2>
-          <p className="text-base md:text-xl text-center text-white mb-10 md:mb-16">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-center text-white mb-6 sm:mb-8 md:mb-10 lg:mb-16 leading-relaxed px-2 sm:px-0">
             I am proficient in programming languages including Python (Pandas,
             NumPy), SQL, ReactJS, C/C++, JavaScript, HTML, and CSS. I specialize
             in data analysis and visualization, using techniques like
@@ -162,7 +157,7 @@ function Home() {
             complex datasets into actionable insights and build interactive
             dashboards that communicate data effectively.
           </p>
-          <p className="text-lg md:text-3xl text-white text-center mb-6 md:mb-8">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white text-center mb-4 sm:mb-6 lg:mb-8">
             Programming Languages
           </p>
           <div className="flex flex-wrap justify-center">
@@ -176,9 +171,9 @@ function Home() {
             <SkillSphere icon={<SiCss3 size={40} />} label="CSS" />
           </div>
 
-          <div className="border-t border-gray-600 mt-8 mb-6"></div>
+          <div className="border-t border-gray-600 mt-4 sm:mt-6 lg:mt-8 mb-4 sm:mb-6"></div>
 
-          <p className="text-lg md:text-3xl text-white text-center mt-6 mb-6 md:mb-8">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white text-center mt-4 sm:mt-6 mb-4 sm:mb-6 lg:mb-8">
             Data Analysis & Visualization
           </p>
           <div className="flex flex-wrap justify-center">
@@ -191,9 +186,9 @@ function Home() {
             <SkillSphere icon={<SiPowerbi size={40} />} label="Power BI" />
           </div>
 
-          <div className="border-t border-gray-600 mt-8 mb-6"></div>
+          <div className="border-t border-gray-600 mt-4 sm:mt-6 lg:mt-8 mb-4 sm:mb-6"></div>
 
-          <p className="text-lg md:text-3xl text-white text-center mt-6 mb-6 md:mb-8">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white text-center mt-4 sm:mt-6 mb-4 sm:mb-6 lg:mb-8">
             Databases & Tools
           </p>
           <div className="flex flex-wrap justify-center">

@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-background text-text">
         <Header />
-        <main className="flex-grow p-4">
+        <main className="flex-grow p-2 sm:p-4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/education" element={<Education />} />

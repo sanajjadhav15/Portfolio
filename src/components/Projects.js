@@ -117,31 +117,31 @@ function Projects() {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <main className="min-h-screen bg-primary p-4 -mx-4 -my-5 relative overflow-hidden">
+    <main className="min-h-screen bg-primary p-2 sm:p-4 -mx-2 sm:-mx-4 -my-2 sm:-my-5 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-data opacity-5"></div>
-      <div className="absolute top-20 right-20 w-80 h-80 bg-tertiary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
-      <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      <div className="absolute top-10 right-4 sm:top-20 sm:right-20 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-tertiary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      <div className="absolute bottom-10 left-4 sm:bottom-20 sm:left-20 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-secondary rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
       
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4">
             My <span className="text-accent">Projects</span>
           </h1>
-          <p className="text-textSecondary text-lg md:text-xl max-w-3xl mx-auto">
+          <p className="text-textSecondary text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
             Discover my diverse portfolio featuring data analytics, business intelligence, and web development projects. 
             From interactive dashboards and automated analysis tools to modern React applications, showcasing solutions that drive real impact.
           </p>
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12">
           {categories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveFilter(category.id)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+              className={`px-3 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 ${
                 activeFilter === category.id
                   ? "bg-gradient-to-r from-accent to-secondary text-white shadow-glow"
                   : "bg-cardBackground/50 text-textSecondary hover:text-white border border-accent/20 hover:border-accent/40"
@@ -154,7 +154,7 @@ function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
@@ -234,8 +234,8 @@ function Projects() {
         </div>
 
         {/* Bottom Stats */}
-        <div className="mt-16 text-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
             <div className="bg-gradient-card p-6 rounded-xl border border-accent/20 backdrop-blur-sm">
               <div className="text-3xl font-bold text-accent mb-2">6</div>
               <div className="text-textSecondary">Projects Completed</div>

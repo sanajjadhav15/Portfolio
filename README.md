@@ -174,7 +174,6 @@ This portfolio website is built with modern technologies:
 
 ![Projects](https://img.shields.io/badge/Projects%20Completed-6-brightgreen?style=for-the-badge)
 ![Technologies](https://img.shields.io/badge/Technologies%20Used-15+-blue?style=for-the-badge)
-![Experience](https://img.shields.io/badge/Years%20Experience-2+-orange?style=for-the-badge)
 
 </div>
 

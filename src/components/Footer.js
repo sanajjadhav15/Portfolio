@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -27,6 +27,15 @@ function Footer() {
               className="text-accent hover:text-white transition-all duration-300 mx-3 hover:scale-110 hover:shadow-glow transform"
             >
               <FaGithub size={32} />
+            </a>
+            <a
+              href="mailto:sanajjadhav77@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Email"
+              className="text-accent hover:text-white transition-all duration-300 mx-3 hover:scale-110 hover:shadow-glow transform"
+            >
+              <FaEnvelope size={32} />
             </a>
             {/* Uncomment and update the Twitter link when available
             <a

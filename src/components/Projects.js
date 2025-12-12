@@ -103,6 +103,18 @@ function Projects() {
       gradient: "from-cyan-500 to-blue-500",
       techIcons: [<SiReact />, <FaRobot />, <FaUsers />]
     },
+    {
+      id: 7,
+      title: "Job Market Insights Dashboard",
+      description: "A comprehensive Power BI analytics project analyzing 229,000+ job postings to uncover Data Analytics market trends. Features star schema modeling, 15+ custom DAX measures, and interactive visualizations revealing top hiring companies, in-demand skills, salary benchmarks, and location patterns across the industry.",
+      technologies: ["Power BI", "DAX", "Power Query", "Data Modeling", "Data Visualization"],
+      category: "dashboard",
+      impact: "Uncovered market trends across 229K postings",
+      githubLink: "https://github.com/sanajjadhav15/Job-Market-Insight-Dashboard-PowerBI",
+      icon: <SiPowerbi />,
+      gradient: "from-indigo-500 to-violet-500",
+      techIcons: [<SiPowerbi />, <FaDatabase />, <FaChartBar />]
+    }
   ];
 
   const categories = [
@@ -237,7 +249,7 @@ function Projects() {
         <div className="mt-12 sm:mt-16 text-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
             <div className="bg-gradient-card p-6 rounded-xl border border-accent/20 backdrop-blur-sm">
-              <div className="text-3xl font-bold text-accent mb-2">6</div>
+              <div className="text-3xl font-bold text-accent mb-2">{projects.length}</div>
               <div className="text-textSecondary">Projects Completed</div>
             </div>
             <div className="bg-gradient-card p-6 rounded-xl border border-accent/20 backdrop-blur-sm">
